@@ -1,8 +1,6 @@
 .home {
-  /* QUESTO è il mio contenitore principale */
-  width: 70%; /* da controllare questo! */
+  width: 70%;
   border: 0.5px solid var(--color-light-grey);
-
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -133,15 +131,21 @@
   font-size: 1.08rem;
   letter-spacing: 0.5px;
   border-radius: 18px;
+  cursor: pointer;
 }
+
+.newTweet__btn:hover {
+  filter: brightness(0.85);
+  transition: ease 400ms;
+}
+
 /**************************** tweets feed main container ****************************/
 .feed {
-  /* border: 2px solid violet; */
   display: flex;
   flex-direction: column;
 }
 
-/* singolo tweet dentro il contenitore feed */
+/* single tweet */
 .tweet {
   display: flex;
   padding: 12px;

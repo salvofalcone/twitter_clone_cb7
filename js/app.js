@@ -1,9 +1,11 @@
-import { GET } from "../utils/http.js";
+import { GET, POST2 } from "../utils/http.js";
 import { qS, qSA, createEl, tweetGenerator } from "../utils/utils.js";
 
 //==========================================================================
 const navItems = qSA(".navItem");
 const contentEl = qS(".feed");
+const newTweet__input = qS(".newTweet__input");
+const newTweet__btn = qS(".newTweet__btn");
 
 // contenitori da riempire con le GET
 let userData = [];
@@ -43,4 +45,10 @@ navItems.forEach((element) => {
   });
 });
 
-// ``
+newTweet__btn.addEventListener("click", () => {
+  let text = newTweet__input.value;
+  POST2(text);
+});
+
+
+

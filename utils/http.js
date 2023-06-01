@@ -6,3 +6,14 @@ export const GET = async (endpoint) => {
 
   return data;
 };
+
+export const POST2 = async (text) => {
+  fetch("https://dummyjson.com/posts/add", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      title: text,
+      userId: 1,
+    }),
+  }).then((res) => res.json());
+};
