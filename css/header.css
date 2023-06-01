@@ -1,0 +1,173 @@
+header {
+  position: sticky; /* da cambiare in fixed */
+  top: 0;
+  height: 100vh;
+  width: 25%;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+header li {
+  list-style-type: none;
+}
+
+header svg {
+  fill: var(--color-white);
+  height: 25px;
+  width: 25px;
+}
+
+/***************** logo *****************/
+.logo {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.logo:hover {
+  background-color: var(--color-hover);
+  border-radius: 24px;
+  width: fit-content;
+  transition: all 150ms ease;
+}
+
+/***************** nav links *****************/
+.navLink {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+}
+
+.navLink:hover {
+  background-color: var(--color-hover);
+  border-radius: 24px;
+  width: fit-content;
+  transition: all 150ms ease;
+}
+
+/***************** cta tweet *****************/
+
+.navCta__link {
+  margin-top: 12px;
+  background-color: var(--color-brand);
+  padding: 12px;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navCta__link:hover {
+  filter: brightness(0.85);
+  transition: ease 400ms;
+}
+
+/***************** profile *****************/
+.profileBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 12px;
+  border-radius: 100px;
+}
+
+.profileBtn:hover {
+  background-color: var(--color-hover);
+  transition: all 150ms ease;
+}
+
+.profileBtn__image {
+  height: 50px;
+  width: 50px;
+}
+
+.profileBtn__image img {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profileBtn__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+
+.profileBtn__user {
+  padding-left: 12px;
+}
+
+.profileBtn__nickname {
+  color: var(--color-grey);
+}
+
+/***************** classi per toggle *****************/
+.active svg {
+  fill: var(--color-brand);
+}
+
+.active p {
+  font-weight: 600;
+}
+
+/***************** media *****************/
+
+@media screen and (max-width: 1024px) {
+  header {
+    width: 10%;
+  }
+  .navCta__link {
+    width: fit-content;
+  }
+
+  .navLink__label {
+    display: none;
+  }
+
+  .navCta__link__label {
+    display: none;
+  }
+
+  .navCta__link__icon svg {
+    fill: var(--color-white);
+    width: 24px;
+    height: 24px;
+    width: fit-content;
+  }
+
+  .profileBtn {
+    width: fit-content;
+    justify-content: center;
+  }
+
+  .profileBtn__user {
+    display: none;
+  }
+
+  .profileBtn__actions {
+    display: none;
+  }
+}
+
+/* media query desktop */
+@media screen and (min-width: 1025px) {
+  .navCta__link {
+    width: 80%;
+  }
+
+  .navCta__link__icon {
+    display: none;
+  }
+}

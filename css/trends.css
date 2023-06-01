@@ -1,0 +1,156 @@
+.trends {
+  position: sticky;
+  top: 2px;
+  width: 29%; /* così mi rimane un pochetto di spazio dal contenitore padre */
+  width: fit-content; /* è corretto? */
+  margin: 2px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  letter-spacing: 0.5px;
+}
+
+/****************** search bar ******************/
+.trends__searchBar {
+  height: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--color-dark-grey);
+  border-radius: 40px;
+}
+
+.trends__searchBar__icon {
+  margin-left: 12px;
+}
+
+.trends__searchBar__icon svg {
+  fill: var(--color-grey);
+  height: 24px;
+  width: 24px;
+}
+
+/* questo devo implementarlo da js e cambiare anche il comportamento dell'input bar */
+/* .trends__searchBar__icon svg .active {
+  fill: var(--color-brand);
+} */
+
+.trends__searchBar__input {
+  background-color: var(--color-dark-grey);
+  border: none;
+  padding-bottom: 5px; /* visivamente senza padding sembra non centrato nonostante lo sia */
+}
+/****************** END search bar ******************/
+
+/****************** trends for you ******************/
+.trends__forYou {
+  /* width: 100%; */
+  background-color: var(--color-dark-grey);
+  border-radius: 24px;
+  padding-bottom: 12px;
+}
+
+.trends__forYou .trends__title {
+  padding: 12px;
+}
+
+/* trends for you (item) */
+.TFY__item__main {
+  display: flex;
+  padding: 6px 12px;
+  justify-content: space-between;
+}
+
+.TFY__item__main:hover {
+  height: 80%;
+  background-color: var(--color-light-grey);
+  cursor: pointer;
+  transition: ease 400ms;
+}
+
+.TFY__items {
+  padding: 6px 0;
+}
+
+.TFY__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.TFY__item__topic,
+.TFY__item__tweets {
+  color: var(--color-grey);
+  font-size: 0.8em;
+}
+
+.TFY__item__title {
+  font-weight: 500;
+}
+
+.TFY__item__more svg {
+  width: 24px;
+  fill: var(--color-grey);
+}
+
+.TFY__item__more:hover svg {
+  fill: var(--color-brand);
+}
+
+/****************** END trends for you ******************/
+
+/****************** who to follow ******************/
+.trends__whoToFollow {
+  background-color: var(--color-dark-grey);
+  /* padding: 12px; */
+  border-radius: 24px;
+}
+
+.trends__title {
+  padding: 12px;
+}
+
+.WTF__accountMain {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 14px;
+}
+
+.WTF__account:hover {
+  background-color: var(--color-light-grey);
+  cursor: pointer;
+  transition: ease 400ms;
+}
+.WTF__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.WTF__account__user {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.WTF__account__user img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.WTF__account__nickname {
+  color: var(--color-grey);
+}
+
+.WTF__account__btn button {
+  background-color: var(--color-white);
+  border: none;
+  padding: 8px 18px;
+  border-radius: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/****************** END who to follow ******************/

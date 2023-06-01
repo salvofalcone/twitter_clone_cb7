@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* da notare l'ordine logico */
+@import "./reset.css";
+@import "./variables.css";
+@import "./header.css";
+@import "./home.css";
+@import "./trends.css";
+@import "./layout.css";
+
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+li{
+  letter-spacing: 0.5px;
+}
+
+
+.loader{
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader svg{
+  fill: var(--color-brand);
+  width: 10vw;
+  height: 10vh;
+}
