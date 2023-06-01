@@ -1,4 +1,4 @@
-import { GET, POST2 } from "../utils/http.js";
+import { GET, POST } from "../utils/http.js";
 import { qS, qSA, createEl, tweetGenerator } from "../utils/utils.js";
 
 //==========================================================================
@@ -47,8 +47,5 @@ navItems.forEach((element) => {
 
 newTweet__btn.addEventListener("click", () => {
   let text = newTweet__input.value;
-  POST2(text);
+  POST(text);
 });
-
-
-

@@ -43,8 +43,7 @@
   transition: ease 400ms;
 }
 
-.mainHome__forYou::after,
-.mainHome__follow::after {
+.active__home{
   content: "";
   position: absolute;
   bottom: 0;

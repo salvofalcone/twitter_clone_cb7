@@ -1,8 +1,7 @@
 .trends {
   position: sticky;
   top: 2px;
-  width: 29%; /* così mi rimane un pochetto di spazio dal contenitore padre */
-  width: fit-content; /* è corretto? */
+  width: 300px; 
   margin: 2px 16px;
   display: flex;
   flex-direction: column;
@@ -31,15 +30,11 @@
   width: 24px;
 }
 
-/* questo devo implementarlo da js e cambiare anche il comportamento dell'input bar */
-/* .trends__searchBar__icon svg .active {
-  fill: var(--color-brand);
-} */
 
 .trends__searchBar__input {
   background-color: var(--color-dark-grey);
   border: none;
-  padding-bottom: 5px; /* visivamente senza padding sembra non centrato nonostante lo sia */
+  padding-bottom: 5px;
 }
 /****************** END search bar ******************/
 

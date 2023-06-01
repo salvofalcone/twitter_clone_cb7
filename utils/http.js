@@ -7,7 +7,7 @@ export const GET = async (endpoint) => {
   return data;
 };
 
-export const POST2 = async (text) => {
+export const POST = async (text) => {
   fetch("https://dummyjson.com/posts/add", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
